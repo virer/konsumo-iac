@@ -20,7 +20,7 @@ patchesJson6902:
     kind: Deployment
     name: konsumo
   path: deployment.yaml
-patchesStrategicMerge:
-- merge.yaml
+# patchesStrategicMerge:
+# - merge.yaml
 # - postsync-failure-merge.yaml
 # - postsync-success-merge.yaml
