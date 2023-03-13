@@ -54,10 +54,10 @@ spec:
           resources:
             limits:
               cpu: 200m
-              memory: 128Mi
+              memory: 512Mi
             requests:
-              cpu: 50m
-              memory: 64Mi
+              cpu: 100m
+              memory: 192Mi
           envFrom:
             - configMapRef:
                 name: konsumo-conf
