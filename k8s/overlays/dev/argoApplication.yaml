@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: 'k8s/overlays/dev'
-    repoURL: 'git@github.com:virer/konsumo-iac.git'
+    repoURL: 'https://github.com/virer/konsumo-iac.git'
     targetRevision: HEAD
   project: 'konsumo'
   syncPolicy:
