@@ -6,6 +6,7 @@ bases:
 - ../../base
 resources:
 - configmap.yaml
+# - secret.yaml 
 patchesJson6902:
 - target:
     version: v1
@@ -21,5 +22,5 @@ patchesJson6902:
   path: deployment.yaml
 patchesStrategicMerge:
 - merge.yaml
-- postsync-failure-merge.yaml
-- postsync-success-merge.yaml
+# - postsync-failure-merge.yaml
+# - postsync-success-merge.yaml
