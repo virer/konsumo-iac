@@ -58,3 +58,13 @@ spec:
             requests:
               cpu: 50m
               memory: 64Mi
+          envFrom:
+            - configMapRef:
+                name: konsumo-conf
+          volumeMounts:
+            - name: konsumo-ssl
+              mountPath: /ssl  
+      volumes:
+        - name: konsumo-ssl
+          secret:
+            secretName: konsumo-ssl

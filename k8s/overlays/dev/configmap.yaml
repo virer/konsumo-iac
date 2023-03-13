@@ -1,9 +1,18 @@
-apiVersion: v1
-data:
-  example: |-
-    # data
-    data
-kind: ConfigMap
-metadata:
-  creationTimestamp: null
-  name: konsumo-conf
+apiVersion:  v1
+data: 
+  HOST: "0.0.0.0"
+  PORT: "8080"
+  GOOGLE_CLIENT_ID: "$GOOGLE_CLIENT_ID"
+  GOOGLE_CLIENT_SECRET: "$GOOGLE_CLIENT_SECRET"
+  SECRET_KEY: "$SECRET_KEY"
+  DBHOST: "127.0.0.1"
+  DBPORT: "3306"
+  DBUSER: "root"
+  DBPASS: "password"
+  DBNAME: "konsumo"
+  SSL_CRT: "/ssl/tls.crt"
+  SSL_KEY: "/ssl/tls.key"
+kind:  ConfigMap
+metadata: 
+  creationTimestamp:  null
+  name:  konsumo-conf
