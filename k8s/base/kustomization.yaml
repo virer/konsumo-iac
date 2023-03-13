@@ -3,4 +3,4 @@ resources:
 - service.yaml
 - serviceaccount.yaml
 - route.yaml
-- postsync.yaml
+# - postsync.yaml
