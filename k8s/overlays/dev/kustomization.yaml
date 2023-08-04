@@ -7,6 +7,12 @@ bases:
 # resources:
 # - configmap.yaml
 # - secret.yaml 
+
+images:
+  - name: konsumo
+    newName: docker.io/scaps/konsumo
+    newTag: dev--1678819105
+
 patchesJson6902:
 - target:
     version: v1
