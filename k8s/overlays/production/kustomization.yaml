@@ -1,0 +1,32 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:
+  app: konsumo
+bases:
+- ../../base
+# resources:
+# - configmap.yaml
+# - secret.yaml 
+
+images:
+  - name: konsumo
+    newName: docker.io/scaps/konsumo
+    newTag: dev--1678819105
+
+patchesJson6902:
+- target:
+    version: v1
+    group: route.openshift.io
+    kind: Route
+    name: konsumo
+  path: route.yaml
+- target:
+    version: v1
+    group: apps
+    kind: Deployment
+    name: konsumo
+  path: deployment.yaml
+# patchesStrategicMerge:
+# - merge.yaml
+# - postsync-failure-merge.yaml
+# - postsync-success-merge.yaml

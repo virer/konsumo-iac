@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: app-msteams-notif-success-angular
+spec:
+  template:
+    spec:
+      containers:
+      - name: msteams-notification-success-angular
+        image: fixme/curlimages:latest
+        command: 
+          - 'curl'
+          - '-H'
+          - 'Content-Type: application/json'
+          - '-d'
+          - '{ "text": "Pipeline argo deployment SUCCESS for konsumo in dev", "@context": "https://schema.org/extensions", "@type": "MessageCard", "themeColor": "0072C6" }'
+          - 'https://thelinkto-msTEAMS-connector'
+          

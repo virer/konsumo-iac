@@ -1,0 +1,14 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: konsumo
+spec:
+  template:
+    spec:
+
+      containers:
+        - name: konsumo
+          env:
+          - name: DT_CUSTOM_PROP
+            value: DEV
+          
