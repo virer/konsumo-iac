@@ -1,6 +1,6 @@
 # - op: replace
 #   path: /spec/template/spec/containers/0/image
-#   value: docker.io/scaps/konsumo:production-main-1693391372
+#   value: docker.io/scaps/konsumo:production-main-1693395661
 - op: replace
   path: /spec/replicas
   value: 1
