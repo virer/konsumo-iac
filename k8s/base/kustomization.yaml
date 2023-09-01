@@ -2,5 +2,5 @@ resources:
 - deployment.yaml
 - service.yaml
 - serviceaccount.yaml
-- route.yaml
+# - route.yaml
 # - postsync.yaml
