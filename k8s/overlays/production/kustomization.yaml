@@ -16,12 +16,6 @@ images:
 patchesJson6902:
 - target:
     version: v1
-    group: route.openshift.io
-    kind: Route
-    name: konsumo
-  path: route.yaml
-- target:
-    version: v1
     group: apps
     kind: Deployment
     name: konsumo
